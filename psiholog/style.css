@@ -1,0 +1,37 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	background: url(background.gif);
+	background-size: 100% 1200px;
+	height: 1200px;
+}
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: bold;
+}
+.container{
+	width: 100%;
+  	height: auto;
+ 	margin: 0 auto;
+ 	display: flex;
+ 	color: #FFF;
+  	justify-content: space-around;
+}
+.button1{
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 150px;
+}
+.button2{
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 150px;
+}
