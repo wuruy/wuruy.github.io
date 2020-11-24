@@ -3,7 +3,7 @@ html, body{
 	margin: 0;
 	background: url(background.gif);
 	background-size: 100% 1200px;
-	height: 1200px;
+	height: 100%;
 }
 header{
 	display: flex;
@@ -26,12 +26,21 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 150px;
+	padding: 0 0 0 20%;
+
 }
 .button2{
 	flex: 1 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 150px;
+	padding: 0 20% 0 0;
 }
+ footer{
+ 	background-color: #C4C4C4;
+ 	padding: 10px;
+ 	font-weight: bold;
+ 	font-size: 24px;
+ 	display: flex;
+ 	justify-content: center;
+ }
