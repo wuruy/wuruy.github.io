@@ -74,7 +74,6 @@ html, body{
 	align-items: center;
 }
 .design{
-	height: 500px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -83,18 +82,21 @@ html, body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 20px;
 }
 .One-Page{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 20px;
 }
 .Awesome-Icons{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 20px;
 }
 .design-zag{
 	font-family: 'Open Sans', sans-serif;
@@ -169,4 +171,23 @@ footer{
 footer p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
+}
+@media only screen and (max-width: 630px) {
+	.design{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.servis-file1{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.servis-file2{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
 }
