@@ -1,0 +1,173 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	min-width: 100%;
+	height: 100%;
+}
+header{
+	background: #222831;
+	display: flex;
+	align-items: center;
+}
+header p{
+	font-weight: bold;
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	display: flex;
+	background: #393E46;
+	justify-content: space-around;
+}
+.row.content {
+	display: flex;
+	justify-content: space-around;
+}
+.context{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.games{
+	background: #222831;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 5px 15px 5px;
+	margin: 30px 10px 30px 10px;
+	width: 80%;
+	height: 80%;
+}
+.games p{
+	margin: 10px;
+}
+.menu{
+	background: #707070;
+}
+.menu-zag{
+	font-weight: bold;
+	font-size: 24px;
+	margin: 30px;
+}
+.menu-a{
+	background: #534E52;
+	padding: 20px 20px 20px 0;
+}
+.menu-a a{
+	padding: : 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+.menu-punct a{
+	display: flex;
+	align-items: center;
+}
+.menu-punct img{
+	padding: 10px;
+}
+.popub{
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: 0.3s;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popub-hide{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.popub-content{
+	z-index: 50;
+	background: white;
+	border-radius: 10px;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.popub.active{
+	opacity: 1;
+	visibility: visible;
+}
+.popub-content p{
+	color: black;
+}
+.burg-button{
+	background: url(burg-active.png);
+	background-size: 50px 50px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 2%;
+	left: 20px;
+	visibility: hidden;
+	cursor: pointer;
+	z-index: 60;
+}
+@media only screen and (max-width: 1000px) {
+	.burg-button{
+		visibility: visible;
+	}
+	.menu{
+		display: none;
+	}
+	.burg-menu{
+		display: none;
+	}
+}
+@media only screen and (max-width: 755px) {
+	.row.content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.row.content img {
+		width: 313px;
+		height: 316px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.row.content img {
+		width: 213px;
+		height: 216px;
+	}
+}
+@media only screen and (max-width: 330px) {
+	.row.content img {
+		width: 202px;
+		height: 205px;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.burg-menu{
+		display: none;
+	}
+}
+.burg-menu{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #707070;
+	height: 100%;
+}
+.burg-button.active{
+	background: url(burg-close.png);
+	background-size: 50px 50px;
+}
