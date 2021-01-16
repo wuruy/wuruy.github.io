@@ -5,6 +5,10 @@ html, body{
 	min-width: 100%;
 	height: 100%;
 }
+p{
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 17px;
+}
 header{
 	background: #222831;
 	display: flex;
@@ -24,6 +28,24 @@ header p{
 .row.content {
 	display: flex;
 	justify-content: space-around;
+}
+#windows{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+#design{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+#android{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 .context{
 	width: 80%;
@@ -70,6 +92,16 @@ header p{
 .menu-punct img{
 	padding: 10px;
 }
+.btn-download{
+	background-color: white; 
+	color: black; 
+	border: 4px solid #4CAF50;
+}
+.btn-download:hover{
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+}
 .popub{
 	background-color: rgba(0,0,0,0.5);
 	opacity: 0;
@@ -109,7 +141,7 @@ header p{
 	color: black;
 }
 .burg-button{
-	background: url(burg-active.png);
+	background: url(img/burg-active.png);
 	background-size: 50px 50px;
 	width: 50px;
 	height: 50px;
@@ -119,6 +151,67 @@ header p{
 	visibility: hidden;
 	cursor: pointer;
 	z-index: 60;
+}
+.popub-btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.popub-btn button{
+	margin: 0 10px;
+}
+.popub-ad{
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: 0.3s;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popub-ad.active{
+	opacity: 1;
+	visibility: visible;
+}
+.ad{
+	padding: 0 20px 20px 20px;
+	background: white;
+	border-radius: 10px;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.ad-content{
+	width: 100px;
+	height: 150px;
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button-ad{
+	background: url(img/burg-close.png);
+	background-size: 35px 35px;
+	width: 35px;
+	height: 35px;
+	margin: 15px 10px 10px 10px;	
+}
+.up{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	bottom: 20px;
+}
+.up img{
+	margin: 0 50px 0 0 ;
 }
 @media only screen and (max-width: 1000px) {
 	.burg-button{
@@ -142,7 +235,7 @@ header p{
 		height: 316px;
 	}
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 509px) {
 	.row.content img {
 		width: 213px;
 		height: 216px;
@@ -159,6 +252,31 @@ header p{
 		display: none;
 	}
 }
+@media only screen and (max-width: 414px) {
+	.up img{
+		margin: 0 10px 0 0 ;
+	}
+}
+@media only screen and (max-width: 411px) {
+	.up img{
+		margin: 0 10px 0 0 ;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.up img{
+		margin: 0 6px 0 0 ;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.up img{
+		margin: 0 7px 0 0 ;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.up img{
+		margin: 0 2px 0 0 ;
+	}
+}
 .burg-menu{
 	display: none;
 	position: fixed;
@@ -168,6 +286,6 @@ header p{
 	height: 100%;
 }
 .burg-button.active{
-	background: url(burg-close.png);
+	background: url(img/burg-close.png);
 	background-size: 50px 50px;
 }

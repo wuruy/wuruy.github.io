@@ -7,11 +7,13 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery-3.5.1.js"></script>
 	<script src="script.js"></script>
-	<meta name="CatCutfeb8e229bf" content="3E741F11D517189C71B0BFAFCC4281F3Y9338" />
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<img src="logo.png" alt="" width="64px" height="64px">
+	<header id="up">
+		<img src="img/logo.png" alt="" width="64px" height="64px">
 		<p>
 			программный	<br>
 			подвал
@@ -21,55 +23,58 @@
 	<div class="container">
 
 		<div class="context">
+			<h1 id="windows">Windows</h1>
 			<div class="row content">
-				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+				<div class="games" onclick="PopUpShow()">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button onclick="PopUpShow()">Скачать</button>
+					<button onclick="PopUpShow()" class="btn-download">Скачать</button>
 				</div>
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 			</div>
+			<h1 id="design">Design</h1>
 			<div class="row content">
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 			</div>
+			<h1 id="android">Android</h1>
 			<div class="row content">
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 				<div class="games">
-					<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+					<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 					<p>Прототип шутера с лапшой вместо рук <br></p>
-					<button>Скачать</button>
+					<button class="btn-download">Скачать</button>
 				</div>
 			</div>
 		</div>
@@ -79,13 +84,13 @@
 			</p>
 			<div class="menu-a">
 				<div class="menu-punct winda">
-					<a href=""><img src="windows.png" alt="" width="32px" height="32px"> СОФТ ДЛЯ WINDOWS</a>
+					<a href="#windows"><img src="img/windows.png" alt="" width="32px" height="32px"> СОФТ ДЛЯ WINDOWS</a>
 				</div>
 				<div class="menu-punct shablon">
-					<a href=""><img src="web-design.png" alt="" width="32px" height="32px">ШАБЛОНЫ ВЕРСТКИ</a>
+					<a href="#design"><img src="img/web-design.png" alt="" width="32px" height="32px">ШАБЛОНЫ ВЕРСТКИ</a>
 				</div>
 				<div class="menu-punct android">
-					<a href=""><img src="android.png" alt="" width="32px" height="32px">АНДРОИД</a>
+					<a href="#android"><img src="img/android.png" alt="" width="32px" height="32px">АНДРОИД</a>
 				</div>
 			</div>
 		</div>
@@ -93,28 +98,38 @@
 	<div class="popub" id="popub">
 		<div class="popub-hide" onclick="PopUpHide()"></div>
 		<div class="popub-content">
-			<img src="8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
+			<img src="img/prog-icon/8qhtnxt324g04c4o0w.png" alt="" width="213px" height="216px">
 			<p>Прототип шутера с лапшой вместо рук <br></p>
-			<button onclick="PopUpHide()">Назад</button>
+			<div class="popub-btn">
+				<button class="btn-download" class="btn-download" onclick="PopUpHide()">Назад</button>
+				<button class="btn-download" class="btn-download" onclick="PopUpShowAd()">Скачать</button>
+			</div>
+		</div>
+	</div>
+	<div class="popub-ad">
+		<div class="ad">
+			<a href="FalconX_13.10.2019_1.2.3.0.zip"><div class="button-ad" class="btn-download" onclick="PopUpHideAd()"></div></a>
+			<div class="ad-content">Реклама</div>
 		</div>
 	</div>
 	<div class="burg-button">
 	</div>
 	<div class="burg-menu">
 		<p class="menu-zag">	
-				КАТЕГОРИИ
-			</p>
-			<div class="menu-a">
-				<div class="menu-punct winda">
-					<a href=""><img src="windows.png" alt="" width="32px" height="32px"> СОФТ ДЛЯ WINDOWS</a>
-				</div>
-				<div class="menu-punct shablon">
-					<a href=""><img src="web-design.png" alt="" width="32px" height="32px">ШАБЛОНЫ ВЕРСТКИ</a>
-				</div>
-				<div class="menu-punct android">
-					<a href=""><img src="android.png" alt="" width="32px" height="32px">АНДРОИД</a>
-				</div>
+			КАТЕГОРИИ
+		</p>
+		<div class="menu-a">
+			<div class="menu-punct winda">
+				<a href="#windows"><img src="img/windows.png" alt="" width="32px" height="32px"> СОФТ ДЛЯ WINDOWS</a>
 			</div>
+			<div class="menu-punct shablon">
+				<a href="#design"><img src="img/web-design.png" alt="" width="32px" height="32px">ШАБЛОНЫ ВЕРСТКИ</a>
+			</div>
+			<div class="menu-punct android">
+				<a href="#android"><img src="img/android.png" alt="" width="32px" height="32px">АНДРОИД</a>
+			</div>
+		</div>
 	</div>
+	<div class="up"><a href="#up"><img src="img/up-arrow.png" alt="" width="50px" height="50px"></a></div>
 </body>
 </html>

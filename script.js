@@ -18,6 +18,15 @@ function PopUpShow(){
 function PopUpHide(){
   $(".popub").removeClass('active');
 }
+function PopUpShowAd(){
+  $(".popub-ad").addClass('active');
+  $(".popub").removeClass('active');
+}
+function PopUpHideAd(){
+  $(".popub-ad").removeClass('active');
+}
+
+
 
 $(".burg").click(function(){
   $(".burg").toggleClass("active");
