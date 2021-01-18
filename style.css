@@ -9,6 +9,9 @@ p{
 	font-family: 'Balsamiq Sans', cursive;
 	font-size: 17px;
 }
+h1{
+	font-family: 'Balsamiq Sans', cursive;
+}
 header{
 	background: #222831;
 	display: flex;
@@ -290,12 +293,26 @@ header p{
 	.popub-content{
 		padding: 30px 5px;
 	}
+	.None{
+		font-size: 20px;
+	}
 }
 @media only screen and (min-width: 1000px) {
 	.burg-menu{
 		display: none;
 	}
 }
+@media only screen and (max-width: 415px) {
+	.None{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 321px) {
+	.None{
+		font-size: 20px;
+	}
+}
+
 @media only screen and (max-width: 414px) {
 	.up img{
 		margin: 0 10px 0 0 ;
